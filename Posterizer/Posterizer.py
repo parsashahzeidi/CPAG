@@ -28,10 +28,19 @@ import time
 cd = os.getcwd()
 
 
-def posterize(file: str, item, saturation: int, interpoliation: int, size=(128, 128), dither_map=None, strength=1, outline=2, outline_color=(255, 255, 255)):
-    base = Image.open(file)  # Opening and Resizing
+def posterize(file: str, item, saturation: int, interpolation: int, size=(128, 128), dither_map=None, strength=1, outline=2, outline_color=(255, 255, 255)):
+    # Opening
+    base = Image.open(file)
     base.thumbnail(size)
 
+    alpha = 0
+    if base.mode == 'RGBA':  # Alpha Controlling
+        base = base.convert(base.mode[:-1])
+        alpha = Image.open(file).split()[3].resize(base.size, Image.NEAREST)
+
+    base = Image.open(file).resize(base.size, Image.NEAREST)
+
+    # Dithering
     if type(dither_map) is str:
         dither_t = tile(Image.open(dither_map).convert('RGBA'), base.size, base.mode)  # Tiling the Dither Map if input is a text
         base = dither(base, dither_t, strength)
@@ -40,10 +49,6 @@ def posterize(file: str, item, saturation: int, interpoliation: int, size=(128, 
         for d in dither_map:
             dither_t = tile(Image.open(d).convert('RGBA'), base.size, base.mode)  # Tiling the Dither Map if input is a list or tuple
             base = dither(base, dither_t, strength / len(dither_map))
-
-    alpha = 0
-    if base.mode == 'RGBA':  # Alpha Controlling
-        alpha = Image.open(file).split()[3].resize(base.size, Image.NEAREST)
 
     saturated = ImageEnhance.Color(base)  # Saturating
     del base
@@ -59,19 +64,19 @@ def posterize(file: str, item, saturation: int, interpoliation: int, size=(128, 
     except TypeError:
         pass
 
-    if interpoliation == 0:  # Integration 0, Euclidean
+    if interpolation == 0:  # Integration 0, Euclidean
         for x in range(width):
             for y in range(height):
                 pixel = data[x, y]
                 data[x, y] = euclidean(item, pixel)
 
-    elif interpoliation == 1:  # Integration 1, Channel based
+    elif interpolation == 1:  # Integration 1, Channel based
         for x in range(width):
             for y in range(height):
                 pixel = data[x, y]
                 data[x, y] = (closest_distance(pr, pixel[0]), closest_distance(pg, pixel[1]), closest_distance(pb, pixel[2]) - 1)
 
-    elif interpoliation == 2:  # Integration 2, Automated Range
+    elif interpolation == 2:  # Integration 2, Automated Range
         range_split = []
         for r in range(item):
             range_split.append(int((256 / item) * r - (256 / item / 2)))  # Making a palette
@@ -155,10 +160,14 @@ def closest_distance(array, number):  # Integration 1, Channel based
 def euclidean(palette, color):  # Integration 0, Euclidean
 
     dis = []
+    index = 0
 
     for p in palette:
+        dis.append(invert_check(p[0] - color[0]) + invert_check(p[1] - color[1]) + invert_check(p[2] - color[2]))
+        if dis[index] is 0:
+            return p
 
-        dis.append((p[0] - color[0]) ** 2 + (p[1] - color[1]) ** 2 + (p[2] - color[2]) ** 2)
+        index += 1
 
     return tuple(palette[dis.index(sorted(dis)[0])])
 
@@ -203,8 +212,8 @@ if __name__ == '__main__':  # Examples:
         for i in range(len(filename)):
             # first interpolation :
             posterize(cd + '/Inputs/' + filename[i],
-                      [(0, 0, 0), (1, 1, 1), (1, 1, 192), (1, 192, 1), (1, 192, 192), (61, 73, 99), (89, 73, 73), (96, 1, 1), (96, 1, 192), (96, 98, 111), (96, 192, 1), (96, 192, 192), (108, 170, 191), (116, 119, 126), (121, 137, 152), (126, 179, 197), (127, 186, 204), (167, 205, 214), (169, 201, 212), (190, 225, 231), (217, 243, 242), (219, 241, 239), (223, 245, 243), (252, 255, 255), (255, 255, 255)]
-                      , 1, 0, resolution, cd + '/DP/Plus.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. Normal ' + os.path.splitext(filename[i])[0] + '.png', 'png')
+                      [(0, 0, 0), (0, 84, 255), (0, 95, 255), (0, 103, 255), (0, 105, 255), (0, 107, 255), (0, 115, 255), (0, 155, 255), (0, 160, 255), (0, 182, 255), (0, 186, 255), (0, 189, 255), (0, 195, 255), (0, 196, 255), (0, 200, 255), (0, 211, 255), (0, 245, 255), (0, 255, 245), (84, 0, 255), (96, 192, 192), (102, 0, 255), (252, 255, 255), (255, 0, 0), (255, 0, 85), (255, 31, 0), (255, 255, 255)]
+                      , 1, 0, resolution, cd + '/DP/Vertical.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. Normal ' + os.path.splitext(filename[i])[0] + '.png', 'png')
             # posterize(cd + '/Inputs/' + filename[i], [[3, 0, 38], [53, 50, 73], [127, 124, 127], [201, 199, 181], [255, 253, 220]], 1, 0, resolution, cd + '/DP/Plus.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. Normal ' + os.path.splitext(filename[i])[0] + '.png', 'png')
             # posterize(image,       [[palette0], [ palette1 ], [   palette2  ],
             #                        [   palette3  ], [  palette4 ]], sat, 0, size)
@@ -212,13 +221,13 @@ if __name__ == '__main__':  # Examples:
             bench = time.time()
 
             # second interpolation:
-            posterize(cd + '/Inputs/' + filename[i], [[3, 53, 127, 201, 255], [0, 50, 124, 199, 253], [38, 73, 127, 181, 220]], 2, 1, resolution, cd + '/DP/Plus.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. Color ' + os.path.splitext(filename[i])[0] + '.png', 'png')
+            posterize(cd + '/Inputs/' + filename[i], [[3, 53, 127, 201, 255], [0, 50, 124, 199, 253], [38, 73, 127, 181, 220]], 2, 1, resolution, cd + '/DP/Vertical.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. Color ' + os.path.splitext(filename[i])[0] + '.png', 'png')
             # posterize(image,       [[     palette red    ], [    palette green   ],
             #                        [    palette blue   ]], sat, 1, size)
             print(int((time.time() - bench) * 1000))
             bench = time.time()
 
-            posterize(cd + '/Inputs/' + filename[i], 4, 2, 2, resolution, cd + '/DP/Plus.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. RangeM ' + os.path.splitext(filename[i])[0] + '.png', 'png')
+            posterize(cd + '/Inputs/' + filename[i], 4, 2, 2, resolution, cd + '/DP/Vertical.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. RangeM ' + os.path.splitext(filename[i])[0] + '.png', 'png')
             # posterize(image,                     Range,sat, 2, size)
             print(int((time.time() - bench) * 1000))
             bench = time.time()
