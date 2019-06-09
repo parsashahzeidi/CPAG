@@ -1,3 +1,24 @@
+'''
+
+Costumizable
+ Pixel
+  Art
+   Generator
+     2000
+      (Palette Grabber)
+
+Made by Parsa Shahzeidi,
+@JamieJacker1, @JamieJacker at Twitter,
+@JamieJacker at Telegram,
+@JamieJacker at Instagram,
+and ParsaShahzeidi@Gmail.com at G-mail.
+
+CPAG is licensed under the UNLicense license,
+ meaning that ANYTHING is ok, until you pretend that you were the creator of this app.
+
+HAVE FUN TRYING TO UNDERSTAND THE CODE!!!
+
+'''
 from PIL import Image
 from PIL import ImageOps
 
@@ -113,7 +134,7 @@ def top_colour(input_image):
     histogram_red = [0] * 256
     histogram_green = [0] * 256
     histogram_blue = [0] * 256
-    input_image_modified = ImageOps.posterize(input_image, 3)
+    input_image_modified = ImageOps.posterize(input_image.convert('RGB'), 8)
     input_image_data = input_image_modified.load()
     width, height = input_image.size
 
@@ -180,11 +201,11 @@ def random_hued(input_image, count):
 
 
 if __name__ == '__main__':
-    file_name = 'Flower1.png'
+    file_name = 'UI1.jpg'
     palette = [(0, 0, 0), (255, 255, 255)]
-    resolution = 512
+    resolution = 256
     resolution = (resolution, resolution)
-    current_image = Image.open(cd + '/Inputs/' + file_name)
+    current_image = Image.open(cd + '/Inputs/' + file_name).convert('RGB')
 
     print('start')
     palette.append(image_miner(current_image))
@@ -199,6 +220,6 @@ if __name__ == '__main__':
     # print(palette)
     print(sorted(list(set(palette))))
 
-    posterize(cd + '/Inputs/' + file_name, palette, 2, 0, resolution, cd + '/DP/Plus.png', .5, 1, [0, 0, 0]).save(cd + '/Outputs/' + os.path.splitext(file_name)[0] + '.png', 'png')
+    posterize(cd + '/Inputs/' + file_name, palette, 2, 0, resolution, cd + '/DP/Vertical.png', .5, 1, (0, 0, 0)).save(cd + '/Outputs/' + os.path.splitext(file_name)[0] + '.png', 'png')
 
     current_image.show()

@@ -10,7 +10,7 @@ Made by Parsa Shahzeidi,
 @JamieJacker1, @JamieJacker at Twitter,
 @JamieJacker at Telegram,
 @JamieJacker at Instagram,
-and ParsaShahzeidi@Gmail.com at Google.
+and ParsaShahzeidi@Gmail.com at G-mail.
 
 CPAG is licensed under the UNLicense license,
  meaning that ANYTHING is ok, until you pretend that you were the creator of this app.
@@ -26,6 +26,12 @@ import os
 import time
 
 cd = os.getcwd()
+
+
+# TODO: A palette cant have alpha: [(230, 111, 120, 0),(203, 303, 103, 0),(0, 0, 0, 0)].
+# TODO: Outline colour needs to remove alpha.
+# TODO: Outline colour needs to come in the form of a tuple not a list.
+
 
 
 def posterize(file: str, item, saturation: int, interpolation: int, size=(128, 128), dither_map=None, strength=1, outline=2, outline_color=(255, 255, 255)):
@@ -163,7 +169,7 @@ def euclidean(palette, color):  # Integration 0, Euclidean
     index = 0
 
     for p in palette:
-        dis.append(invert_check(p[0] - color[0]) + invert_check(p[1] - color[1]) + invert_check(p[2] - color[2]))
+        dis.append((p[0] - color[0]) ** 2 + (p[1] - color[1]) ** 2 + (p[2] - color[2]) ** 2)
         if dis[index] is 0:
             return p
 
