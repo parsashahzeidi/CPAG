@@ -15,29 +15,33 @@ and ParsaShahzeidi@Gmail.com at G-mail.
 CPAG is licensed under the UNLicense license,
  meaning that ANYTHING is ok, until you pretend that you were the creator of this app.
 
+(Refer to Palette.py for palette detection and a bunch of other cool stuff that I programmed.)
+
 HAVE FUN TRYING TO UNDERSTAND THE CODE!!!
 
 '''
 from PIL import Image
 from PIL import ImageEnhance
 from PIL import ImageChops
+from PIL import ImageFilter
 
 import os
 import time
+import cv2
+import cython  # Faster debugging, remove for memory performance if you want.
 
 cd = os.getcwd()
 
+#  Notes:
+# A palette cant have alpha: [(230, 111, 120, 0),(203, 303, 103, 0),(0, 0, 0, 0)].
+# Outline colour cant have alpha.
+# Outline colour needs to come in the form of a tuple and not a list.
 
-# TODO: A palette cant have alpha: [(230, 111, 120, 0),(203, 303, 103, 0),(0, 0, 0, 0)].
-# TODO: Outline colour needs to remove alpha.
-# TODO: Outline colour needs to come in the form of a tuple not a list.
 
-
-
-def posterize(file: str, item, saturation: int, interpolation: int, size=(128, 128), dither_map=None, strength=1, outline=2, outline_color=(255, 255, 255)):
+def posterize(file: str, output_size, interpolation: int, palette, saturation: int, dither_file=None, dither_strength=1., outline_type=2, outline_color=(0, 0, 0)):
     # Opening
     base = Image.open(file)
-    base.thumbnail(size)
+    base.thumbnail(output_size)
 
     alpha = 0
     if base.mode == 'RGBA':  # Alpha Controlling
@@ -47,25 +51,26 @@ def posterize(file: str, item, saturation: int, interpolation: int, size=(128, 1
     base = Image.open(file).resize(base.size, Image.NEAREST)
 
     # Dithering
-    if type(dither_map) is str:
-        dither_t = tile(Image.open(dither_map).convert('RGBA'), base.size, base.mode)  # Tiling the Dither Map if input is a text
-        base = dither(base, dither_t, strength)
+    if type(dither_file) is str:
+        dither_t = tile(Image.open(dither_file).convert('RGBA'), base.size, base.mode)
+        # Tiling the Dither Map if input is a image location
+        base = dither(base, dither_t, dither_strength)
 
-    elif type(dither_map) is list:
-        for d in dither_map:
-            dither_t = tile(Image.open(d).convert('RGBA'), base.size, base.mode)  # Tiling the Dither Map if input is a list or tuple
-            base = dither(base, dither_t, strength / len(dither_map))
+    elif type(dither_file) is list:
+        for d in dither_file:
+            dither_t = tile(Image.open(d).convert('RGBA'), base.size, base.mode)
+            # Tiling the Dither Map if input is a list or tuple
+            base = dither(base, dither_t, dither_strength / len(dither_file))
 
     saturated = ImageEnhance.Color(base)  # Saturating
-    del base
     saturated = saturated.enhance(saturation)
 
     data = saturated.load()
     width, height = saturated.size  # Loading into memory
     try:
-        pr = item[0]
-        pg = item[1]
-        pb = item[2]
+        pr = palette[0]
+        pg = palette[1]
+        pb = palette[2]
 
     except TypeError:
         pass
@@ -73,81 +78,93 @@ def posterize(file: str, item, saturation: int, interpolation: int, size=(128, 1
     if interpolation == 0:  # Integration 0, Euclidean
         for x in range(width):
             for y in range(height):
-                pixel = data[x, y]
-                data[x, y] = euclidean(item, pixel)
+                data[x, y] = euclidean(palette, data[x, y])
 
     elif interpolation == 1:  # Integration 1, Channel based
         for x in range(width):
             for y in range(height):
                 pixel = data[x, y]
-                data[x, y] = (closest_distance(pr, pixel[0]), closest_distance(pg, pixel[1]), closest_distance(pb, pixel[2]) - 1)
+                data[x, y] = (closest_distance(pr, pixel[0]),
+                              closest_distance(pg, pixel[1]),
+                              closest_distance(pb, pixel[2]))
 
     elif interpolation == 2:  # Integration 2, Automated Range
-        range_split = []
-        for r in range(item):
-            range_split.append(int((256 / item) * r - (256 / item / 2)))  # Making a palette
-        range_split.append(255)
-        range_split.append(0)
-
+        palette = int(256 / palette)
+        additive = int(256 / palette / 2)
         for x in range(width):
             for y in range(height):
                 pixel = data[x, y]
-                valr = []
-                valg = []
-                valb = []
-                for r in range(len(range_split)):
-                    if pixel[0] <= range_split[r]:  # Red
-                        valr.append(range_split[r])
+                data[x, y] = (int(pixel[0] / palette) * palette + additive,
+                              int(pixel[1] / palette) * palette + additive,
+                              int(pixel[2] / palette) * palette + additive)
 
-                for r in range(len(range_split)):
-                    if range_split[r] >= pixel[1]:  # Green
-                        valg.append(range_split[r])
+    if outline_type != 0:
+        outline_image = Image.new('L', saturated.size, 0)
+        if alpha != 0:
+            saturated.putalpha(alpha)  # Alpha Controlling
 
-                for r in range(len(range_split)):
-                    if range_split[r] >= pixel[2]:  # Blue
-                        valb.append(range_split[r])
+            outline_image = alpha_outlining(alpha)
 
-                data[x, y] = (min(valr), min(valg), min(valb))
+        if outline_type == 2:
+            base = base.filter(ImageFilter.SMOOTH_MORE())
+            outline_image = ImageChops.add(canny_outlining(base),
+                                           outline_image)
 
-    if alpha != 0:
-        saturated.putalpha(alpha)  # Alpha Controlling
-
-        if outline != 0:
-            outline_image = Image.new('RGBA', saturated.size, (0, 0, 0, 0))  # outlining
-            outline_data = outline_image.load()
-            alpha_long = Image.new('L', (saturated.size[0] + 1, saturated.size[1] + 1), (0))
-            alpha_long_data = alpha_long.load()
-            alpha_long.paste(alpha, (0, 0))
-            for x in range(width):
-                for y in range(height):
-                    if alpha_long_data[x, y] < 255:
-                        if alpha_long_data[x, invert_check(y - 1)] is 255:
-                            outline_data[x, y] = outline_color  # Bottom pixel
-                            continue
-
-                        if alpha_long_data[x, y + 1] is 255:
-                            outline_data[x, y] = outline_color  # Top pixel
-                            continue
-
-                        if alpha_long_data[invert_check(x - 1), y] is 255:
-                            outline_data[x, y] = outline_color  # Left pixel
-                            continue
-
-                        if alpha_long_data[x + 1, y] is 255:
-                            outline_data[x, y] = outline_color  # Right pixel
-                            continue
-
-            saturated = Image.alpha_composite(saturated, outline_image)  # Combining outline_data pixels for alpha
-
-
+        saturated = ImageChops.composite(Image.new(saturated.mode, saturated.size, outline_color),
+                                         saturated,
+                                         outline_image)  # Combining the base and a new image with a mask.
 
     return saturated
 
 
-def dither(base, dither, strength=1):
-    dither = dither.convert(base.mode)
-    dither = ImageChops.blend(Image.new(base.mode, base.size, (255, 255, 255)), dither, strength)
-    return ImageChops.multiply(dither, base)
+def dither(input_image, dither_map, strength=1.):
+    dither_map = dither_map.convert(input_image.mode)
+    dither_map = ImageChops.blend(Image.new(input_image.mode, input_image.size, (255, 255, 255)), dither_map, strength)
+    return ImageChops.multiply(dither_map, input_image)
+
+
+def canny_outlining(input_image):
+    input_image.save(cd + '/tmp.png', 'PNG')
+
+    cannied_image = cv2.imread('tmp.png', 0)
+
+    cannied_image = cv2.Canny(cannied_image, 100, 200)
+    cv2.imwrite('tmp.png', cannied_image)
+
+    return Image.open(cd + '/tmp.png').convert('L')
+
+
+def alpha_outlining(input_alpha):  # Alpha Outlining
+
+    outline_image = Image.new('L', input_alpha.size)
+    outline_data = outline_image.load()
+
+    # Offsetting the image by 1 pixel from the top and left to prevent errors
+    alpha_long = Image.new('L', (input_alpha.size[0] + 2, input_alpha.size[1] + 2), 0)
+    alpha_long_data = alpha_long.load()
+    alpha_long.paste(input_alpha, (0, 0))
+
+    width, height = input_alpha.size
+    for x in range(width):
+        for y in range(height):
+            if alpha_long_data[x, y] < 255:
+                if alpha_long_data[x + 1, y] is 255:
+                    outline_data[x, y] = 255  # Bottom pixel
+                    continue
+
+                if alpha_long_data[x + 1, y + 2] is 255:
+                    outline_data[x, y] = 255  # Top pixel
+                    continue
+
+                if alpha_long_data[x, y + 1] is 255:
+                    outline_data[x, y] = 255  # Left pixel
+                    continue
+
+                if alpha_long_data[x + 2, y + 1] is 255:
+                    outline_data[x, y] = 255  # Right pixel
+                    continue
+
+    return outline_image
 
 
 def closest_distance(array, number):  # Integration 1, Channel based
@@ -164,13 +181,19 @@ def closest_distance(array, number):  # Integration 1, Channel based
 
 
 def euclidean(palette, color):  # Integration 0, Euclidean
-
+    '''
+    palette is referring to your palette
+    color is referring to the current pixel
+    '''
     dis = []
     index = 0
 
     for p in palette:
-        dis.append((p[0] - color[0]) ** 2 + (p[1] - color[1]) ** 2 + (p[2] - color[2]) ** 2)
-        if dis[index] is 0:
+        dis.append((p[0] - color[0]) ** 2
+                   + (p[1] - color[1]) ** 2
+                   + (p[2] - color[2]) ** 2)
+
+        if dis[index] == 0:
             return p
 
         index += 1
@@ -211,31 +234,73 @@ if __name__ == '__main__':  # Examples:
             f = -2
         f = f + 1
 
-    resolution = 512
+    resolution = 256
     resolution = (resolution, resolution)
+
+    palette_euclidean = [(0, 0, 0), (42, 42, 42), (84, 84, 84), (126, 126, 126), (168, 168, 168), (210, 210, 210)]
+    palette_channel_based = [[0, 53, 127, 201, 255], [0, 50, 124, 199, 253], [10, 73, 127, 181, 220]]
+    palette_range = 5
+
+    saturation_amount = 1
+    dither_amount = .5
+
+    current_path = ''
+    current_output_path = ''
+    dithering_path = cd + '/DP/Plus.png'
+
     bench = time.time()
     try:
         for i in range(len(filename)):
-            # first interpolation :
-            posterize(cd + '/Inputs/' + filename[i],
-                      [(0, 0, 0), (0, 84, 255), (0, 95, 255), (0, 103, 255), (0, 105, 255), (0, 107, 255), (0, 115, 255), (0, 155, 255), (0, 160, 255), (0, 182, 255), (0, 186, 255), (0, 189, 255), (0, 195, 255), (0, 196, 255), (0, 200, 255), (0, 211, 255), (0, 245, 255), (0, 255, 245), (84, 0, 255), (96, 192, 192), (102, 0, 255), (252, 255, 255), (255, 0, 0), (255, 0, 85), (255, 31, 0), (255, 255, 255)]
-                      , 1, 0, resolution, cd + '/DP/Vertical.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. Normal ' + os.path.splitext(filename[i])[0] + '.png', 'png')
-            # posterize(cd + '/Inputs/' + filename[i], [[3, 0, 38], [53, 50, 73], [127, 124, 127], [201, 199, 181], [255, 253, 220]], 1, 0, resolution, cd + '/DP/Plus.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. Normal ' + os.path.splitext(filename[i])[0] + '.png', 'png')
-            # posterize(image,       [[palette0], [ palette1 ], [   palette2  ],
-            #                        [   palette3  ], [  palette4 ]], sat, 0, size)
-            print(int((time.time() - bench) * 1000))
+            current_path = cd + '/Inputs/' + filename[i]
+            current_output_path_name = cd + '/Outputs/' + str(i) + os.path.splitext(filename[i])[0]
+            output_extension = '.png'
+
+            # First interpolation :
+            posterize(current_path,
+                      resolution,
+                      0,  # Interpolation
+                      palette_euclidean,
+                      saturation_amount,
+                      dithering_path,
+                      dither_amount,
+                      2,  # Outline type
+                      (0, 0, 0))\
+                .save(current_output_path + ' Normal' + output_extension, 'PNG')
+
+            # First Time print
+            print(str(int((time.time() - bench) * 1000)) + 'E')
             bench = time.time()
 
-            # second interpolation:
-            posterize(cd + '/Inputs/' + filename[i], [[3, 53, 127, 201, 255], [0, 50, 124, 199, 253], [38, 73, 127, 181, 220]], 2, 1, resolution, cd + '/DP/Vertical.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. Color ' + os.path.splitext(filename[i])[0] + '.png', 'png')
-            # posterize(image,       [[     palette red    ], [    palette green   ],
-            #                        [    palette blue   ]], sat, 1, size)
-            print(int((time.time() - bench) * 1000))
+            # Second interpolation:
+            posterize(current_path,
+                      resolution,
+                      1,  # Interpolation
+                      palette_channel_based,
+                      saturation_amount,
+                      dithering_path,
+                      dither_amount,
+                      2,  # Outline type
+                      (0, 0, 0))\
+                .save(current_output_path + ' Channel' + output_extension, 'PNG')
+
+            # Second Time print
+            print(str(int((time.time() - bench) * 1000)) + 'C')
             bench = time.time()
 
-            posterize(cd + '/Inputs/' + filename[i], 4, 2, 2, resolution, cd + '/DP/Vertical.png', .5, 2).save(cd + '/Outputs/' + str(i) + '. RangeM ' + os.path.splitext(filename[i])[0] + '.png', 'png')
-            # posterize(image,                     Range,sat, 2, size)
-            print(int((time.time() - bench) * 1000))
+            # Third interpolation
+            posterize(current_path,
+                      resolution,
+                      2,  # Interpolation
+                      palette_range,
+                      saturation_amount,
+                      dithering_path,
+                      dither_amount,
+                      2,  # Outline type
+                      (0, 0, 0))\
+                .save(current_output_path + ' Divide' + output_extension, 'PNG')
+
+            # Third Time print
+            print(str(int((time.time() - bench) * 1000)) + 'D')
             bench = time.time()
     except FileNotFoundError:
         raise FileNotFoundError('Jame missed the easiest part of the code.')

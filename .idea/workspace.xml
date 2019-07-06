@@ -2,12 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddf9eb2d-f121-4445-8d24-d73af3a6af95" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jamiejacker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jamiejacker.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/AverageOutputs/UI5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/0. Color Tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/0. Color Tree.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/0. Normal Tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/0. Normal Tree.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/0. RangeM Tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/0. RangeM Tree.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/1. Color Anime.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/1. Color Anime.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/1. Normal Anime.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/1. Normal Anime.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/1. RangeM Anime.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/1. RangeM Anime.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/10. Color UI4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/10. Color UI4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/10. Normal UI4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/10. Normal UI4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/10. RangeM UI4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/10. RangeM UI4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/11. Color UI5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/11. Color UI5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/11. Normal UI5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/11. Normal UI5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/11. RangeM UI5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/11. RangeM UI5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/12. Color UI6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/12. Color UI6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/12. Normal UI6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/12. Normal UI6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/12. RangeM UI6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/12. RangeM UI6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/13. Color UI7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/13. Color UI7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/13. Normal UI7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/13. Normal UI7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/13. RangeM UI7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/13. RangeM UI7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/14. Color UI8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/14. Color UI8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/14. Normal UI8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/14. Normal UI8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/14. RangeM UI8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/14. RangeM UI8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/15. Color UI9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/15. Color UI9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/15. Normal UI9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/15. Normal UI9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/15. RangeM UI9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/15. RangeM UI9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/16. Color UI10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/16. Color UI10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/16. Normal UI10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/16. Normal UI10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/16. RangeM UI10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/16. RangeM UI10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/17. Color UI11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/17. Color UI11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/17. Normal UI11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/17. Normal UI11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/17. RangeM UI11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/17. RangeM UI11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/2. Color MumboB.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/2. Color MumboB.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/2. Normal MumboB.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/2. Normal MumboB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/2. RangeM MumboB.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/2. RangeM MumboB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/3. Color MumboS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/3. Color MumboS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/3. Normal MumboS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/3. Normal MumboS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/3. RangeM MumboS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/3. RangeM MumboS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/4. Color Flower1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/4. Color Flower1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/4. Normal Flower1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/4. Normal Flower1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/4. RangeM Flower1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/4. RangeM Flower1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/5. Color Flower2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/5. Color Flower2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/5. Normal Flower2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/5. Normal Flower2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/5. RangeM Flower2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/5. RangeM Flower2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/5.kra" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/6. Color Flower3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/6. Color Flower3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/6. Normal Flower3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/6. Normal Flower3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/6. RangeM Flower3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/6. RangeM Flower3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/7. Color UI1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/7. Color UI1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/7. Normal UI1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/7. Normal UI1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/7. RangeM UI1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/7. RangeM UI1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/8. Color UI2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/8. Color UI2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/8. Normal UI2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/8. Normal UI2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/8. RangeM UI2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/8. RangeM UI2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/9. Color UI3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/9. Color UI3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/9. Normal UI3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/9. Normal UI3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/9. RangeM UI3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/9. RangeM UI3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Posterizer/Palette.py" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Palette.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Posterizer/Posterizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Posterizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PosterizerBOI.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +79,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Posterizer/Palette.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="793">
+              <caret line="282" column="67" selection-start-line="282" selection-start-column="67" selection-end-line="282" selection-end-column="67" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#486#507#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,11 +91,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Posterizer/Posterizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="3" lean-forward="true" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="6528">
+              <caret line="272" lean-forward="true" selection-start-line="272" selection-end-line="272" />
               <folding>
-                <element signature="e#395#416#0" expanded="true" />
+                <element signature="e#491#512#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Posterizer/Luts/H5.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -50,23 +115,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Setup Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>p</find>
-      <find>r</find>
-      <find>c</find>
-      <find>min</find>
-      <find>dither</find>
-      <find>save</find>
-      <find>base</find>
-      <find>d</find>
-      <find>convert</find>
-      <find>Dither</find>
-      <find>poster</find>
-      <find>_lut</find>
       <find>post</find>
       <find>item</find>
       <find>Item</find>
@@ -85,6 +139,18 @@
       <find>append</find>
       <find>-</find>
       <find>POSTER</find>
+      <find>canny</find>
+      <find>eval</find>
+      <find>putalpha</find>
+      <find>putal</find>
+      <find>save</find>
+      <find>compo</find>
+      <find>_lut</find>
+      <find>output_size</find>
+      <find>data</find>
+      <find>strength</find>
+      <find>palette</find>
+      <find>cd</find>
     </findStrings>
     <replaceStrings>
       <replace>Minimum</replace>
@@ -114,16 +180,15 @@
         <option value="$PROJECT_DIR$/CPAG.py" />
         <option value="$PROJECT_DIR$/Posterizer/E.py" />
         <option value="$PROJECT_DIR$/Posterizer/Average.py" />
+        <option value="$PROJECT_DIR$/Posterizer/Luts/H5.py" />
         <option value="$PROJECT_DIR$/Posterizer/Posterizer.py" />
         <option value="$PROJECT_DIR$/Posterizer/Palette.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="466" />
-    <option name="y" value="271" />
-    <option name="width" value="1420" />
-    <option name="height" value="927" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1166" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -211,6 +276,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="H5" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CPAG" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Posterizer/Luts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Posterizer/Luts/H5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Open Menu" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CPAG" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,34 +339,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Posterizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CPAG" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Posterizer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Average" />
         <item itemvalue="Python.Posterizer (1)" />
+        <item itemvalue="Python.H5" />
         <item itemvalue="Python.CPAG" />
         <item itemvalue="Python.Open Menu" />
-        <item itemvalue="Python.Posterizer" />
       </list>
     </recent_temporary>
   </component>
@@ -307,42 +372,42 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2160" height="1394" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1166" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.15833333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" weight="0.15833333" />
       <window_info id="Structure" order="1" sideWeight="0.50082916" side_tool="true" weight="0.16048804" />
       <window_info id="Favorites" order="2" sideWeight="0.50082916" side_tool="true" weight="0.16048804" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32990506" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.277821" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4199683" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.200754" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41877934" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288854" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32725832" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32884312" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32840466" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" weight="0.16003744" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.15833333" />
       <window_info id="Structure" order="1" sideWeight="0.50082916" side_tool="true" weight="0.16048804" />
       <window_info id="Favorites" order="2" sideWeight="0.50082916" side_tool="true" weight="0.16048804" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32990506" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27812997" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42009494" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.200754" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41877934" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288854" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.327529" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32725832" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32911393" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32840466" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -350,6 +415,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Posterizer/Palette.py</url>
+          <line>276</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -358,6 +430,11 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="dones_v[0]" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -427,47 +504,47 @@ ImageMath.multiply(e, 2)</expression-string>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>int(84 / 2) *2</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>int(83 / 2) *2</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pixel</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>item</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pixel[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>base.mode</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>interpolation</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>fifty_shades_of_grey_number_of_shades</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
         <expression-string>fiftyshadesofgrey()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>fiftyshadesofgrey(colour, fifty_shades_of_grey_number_of_shades)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>palette</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cpus</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(type(dither_map))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>type(dither_map)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>list(imagechops.blend(dither, image.new(base.mode, base.size, (255, 255, 255)), 255).getdata()) == list(imagechops.blend(dither, image.new(base.mode, base.size, (255, 255, 255)), .9).getdata())</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>list(imagechops.blend(dither, image.new(base.mode, base.size, (255, 255, 255)), 255).getdata()) == list(imagechops.blend(dither, image.new(base.mode, base.size, (255, 255, 255)), 1).getdata())</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -497,13 +574,6 @@ ImageMath.multiply(e, 2)</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/ImageFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
         </state>
       </provider>
     </entry>
@@ -554,13 +624,6 @@ ImageMath.multiply(e, 2)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/ImageChops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2904">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CPAG.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -583,13 +646,6 @@ ImageMath.multiply(e, 2)</expression-string>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Posterizer/PosterizerBAK.py" />
-    <entry file="file:///usr/lib/python3.7/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="311" column="25" selection-start-line="311" selection-start-column="25" selection-end-line="311" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -656,13 +712,6 @@ ImageMath.multiply(e, 2)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/533682446/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="488" column="4" selection-start-line="488" selection-start-column="4" selection-end-line="488" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.7/multiprocessing/pool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -677,29 +726,92 @@ ImageMath.multiply(e, 2)</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/533682446/cv2/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="7503" column="35" selection-start-line="7503" selection-start-column="35" selection-end-line="7503" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.7/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/applications/firefox.desktop">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-line="191" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/ImageChops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="267" column="9" selection-start-line="267" selection-start-column="4" selection-end-line="267" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/ImageFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="254" column="66" selection-start-line="254" selection-start-column="66" selection-end-line="254" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.7/ntpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="177" column="4" selection-start-line="177" selection-start-column="4" selection-end-line="177" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/533682446/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1240">
+          <caret line="529" column="4" selection-start-line="529" selection-start-column="4" selection-end-line="529" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Posterizer/Luts/H5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-794">
-          <caret line="873" column="48" lean-forward="true" selection-start-line="873" selection-start-column="48" selection-end-line="873" selection-end-column="48" />
+        <state relative-caret-position="-23">
+          <caret line="1980" column="8" selection-start-line="1980" selection-start-column="8" selection-end-line="1980" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Posterizer/Posterizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="3" lean-forward="true" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="6528">
+          <caret line="272" lean-forward="true" selection-start-line="272" selection-end-line="272" />
           <folding>
-            <element signature="e#395#416#0" expanded="true" />
+            <element signature="e#491#512#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Posterizer/Palette.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="793">
+          <caret line="282" column="67" selection-start-line="282" selection-start-column="67" selection-end-line="282" selection-end-column="67" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#486#507#0" expanded="true" />
           </folding>
         </state>
       </provider>

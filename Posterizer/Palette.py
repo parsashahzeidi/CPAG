@@ -5,7 +5,7 @@ Costumizable
   Art
    Generator
      2000
-      (Palette Grabber)
+      (Palette Generator)
 
 Made by Parsa Shahzeidi,
 @JamieJacker1, @JamieJacker at Twitter,
@@ -15,6 +15,8 @@ and ParsaShahzeidi@Gmail.com at G-mail.
 
 CPAG is licensed under the UNLicense license,
  meaning that ANYTHING is ok, until you pretend that you were the creator of this app.
+
+(Refer to Posterizer.py for the main posterization algorithms.)
 
 HAVE FUN TRYING TO UNDERSTAND THE CODE!!!
 
@@ -27,7 +29,7 @@ import multiprocessing
 import os
 import random
 import colorsys
-from Posterizer import posterize
+from Posterizer import posterize  # Possible false alarm, conflicts between Python and PyCharm.
 
 cd = os.getcwd()
 cpus = multiprocessing.cpu_count()
@@ -36,6 +38,11 @@ cpus = multiprocessing.cpu_count()
 def avg(input_array):
     # Returns the average of a tuple or an array
     return sum(input_array) / len(input_array)
+
+
+def euclidean(input_array):
+    # Returns the Euclidean distance in the array coordinates from O
+    return sum([i ** 2 for i in input_array]) ** (1./2.)
 
 
 def argmin(input_array):
@@ -94,6 +101,38 @@ def func_multiplier(input_function, input_array, before_inputs: str = None, afte
     return output_array
 
 
+def palette_to_image(input_palette, width_per_colour, height):
+    # Simple conversion from a palette to an image.
+    width = len(input_palette)
+    palette_image = Image.new('RGB', (width, 1))
+    output_image_data = palette_image.load()
+    for i in range(width):
+        output_image_data[i, 0] = input_palette[i]
+
+    palette_image = palette_image.resize((width * width_per_colour, height), Image.NEAREST)
+
+    return palette_image
+
+
+def palette_sorter(input_palette):
+    # Sorts a palette with the euclidean algorithm (BubbleSort)
+    palette_average = [euclidean(p) for p in input_palette]
+    maximum_number = argmax(palette_average)
+    palette_sorted = []
+    for i in range(len(palette_average) - 1):
+        # Appending the current highest item
+        palette_sorted.append(input_palette[maximum_number])
+
+        # Removal of the current highest item
+        del palette_average[maximum_number]
+        del input_palette[maximum_number]
+
+        # Resetting maximum_number
+        maximum_number = argmax(palette_average)
+
+    return palette_sorted
+
+
 def image_maxer(input_image):
     # Returns the brightest pixel in an image
     maximized = (0, 0, 0)
@@ -150,11 +189,11 @@ def top_colour(input_image):
     return palette_output
 
 
-fifty_shades_of_grey_number_of_shades = 0
+fifty_shades_of_grey_number_of_shades = 0  # Multiprocessing requirement.
 
 
 def looping_shades(colour):
-    return fiftyshadesofgrey(colour, fifty_shades_of_grey_number_of_shades)
+    return fiftyshadesofgrey(colour, fifty_shades_of_grey_number_of_shades)  # Multiprocessing requirement.
 
 
 def fiftyshadesofgrey(input_palette, number_of_shades):
@@ -189,37 +228,58 @@ def fiftyshadesofgrey(input_palette, number_of_shades):
 
 
 def random_hued(input_image, count):
-    # Grabs some random pixels, then neutralizes their colour.
+    # Grabs some random pixels from an image.
     input_image_data = input_image.load()
     width, height = input_image.size
     palette_output = []
     for c in range(count):
-        random.seed(input_image_data[0, c])
-        palette_output.append(input_image_data[random.randint(0, width), random.randint(0, height)])
+        random.seed(input_image_data[0, c])  # We don't want different outputs per run, do we?
+        palette_output.append(input_image_data[random.randint(0, width - 1),
+                                               random.randint(0, height - 1)])
 
     return palette_output
 
 
 if __name__ == '__main__':
-    file_name = 'UI1.jpg'
+    # Main 'launcher'
+
+    file_name = 'UI5.jpg'  # Change this to whatever image you want to use.
+    file_path = cd + '/Inputs/' + file_name
+
+    saturation_amount = 1
+    dither_amount = .5
+    dithering_path = cd + '/DP/Plus.png'
+
     palette = [(0, 0, 0), (255, 255, 255)]
     resolution = 256
     resolution = (resolution, resolution)
     current_image = Image.open(cd + '/Inputs/' + file_name).convert('RGB')
 
-    print('start')
+    # Palette detection start.
+    print('start.')
     palette.append(image_miner(current_image))
     print('Min done.')
     palette.append(image_maxer(current_image))
     print('Max done.')
     palette.extend(top_colour(current_image))
     print('Top done.')
-    palette.extend(fiftyshadesofgrey(random_hued(current_image, 40), 6))
+    palette.extend(fiftyshadesofgrey(random_hued(current_image, 200), 6))
     print('Rand done.')
 
-    # print(palette)
-    print(sorted(list(set(palette))))
+    # Cleaning the palette
+    palette = list(set(palette))
+    palette = palette_sorter(palette)
+    print(palette)
 
-    posterize(cd + '/Inputs/' + file_name, palette, 2, 0, resolution, cd + '/DP/Vertical.png', .5, 1, (0, 0, 0)).save(cd + '/Outputs/' + os.path.splitext(file_name)[0] + '.png', 'png')
+    # Previewing the palette
+    palette_preview = palette_to_image(palette, 5, 100)
+    palette_preview.show()
+    palette_preview.save(cd + '/Outputs/' + ' Palette.png', 'PNG')
 
-    current_image.show()
+    current_image.show()  # Rendering a view for the original image
+
+    # Posterizing.
+    output_image = posterize(file_path, resolution, 0, palette, saturation_amount, dithering_path, dither_amount, 0, (0, 0, 0))
+    output_image.save(cd + '/Outputs/' + 'Rendered.png', 'PNG')
+
+    output_image.show()  # Rendering a view for the posterized image
