@@ -1,5 +1,4 @@
 '''
-
 Costumizable
  Pixel
   Art
@@ -18,7 +17,6 @@ CPAG is licensed under the UNLicense license,
 (Refer to Palette.py for palette detection and a bunch of other cool stuff that I programmed.)
 
 HAVE FUN TRYING TO UNDERSTAND THE CODE!!!
-
 '''
 from PIL import Image
 from PIL import ImageEnhance
@@ -67,13 +65,6 @@ def posterize(file: str, output_size, interpolation: int, palette, saturation: i
 
     data = saturated.load()
     width, height = saturated.size  # Loading into memory
-    try:
-        pr = palette[0]
-        pg = palette[1]
-        pb = palette[2]
-
-    except TypeError:
-        pass
 
     if interpolation == 0:  # Integration 0, Euclidean
         for x in range(width):
@@ -81,6 +72,10 @@ def posterize(file: str, output_size, interpolation: int, palette, saturation: i
                 data[x, y] = euclidean(palette, data[x, y])
 
     elif interpolation == 1:  # Integration 1, Channel based
+        pr = palette[0]
+        pg = palette[1]
+        pb = palette[2]
+
         for x in range(width):
             for y in range(height):
                 pixel = data[x, y]
@@ -171,8 +166,8 @@ def closest_distance(array, number):  # Integration 1, Channel based
 
     dis = []
 
-    for i in array:
-        val = i - number
+    for item in array:
+        val = item - number
         if val < 0:
             val = -val
 
@@ -201,10 +196,10 @@ def euclidean(palette, color):  # Integration 0, Euclidean
     return tuple(palette[dis.index(sorted(dis)[0])])
 
 
-def tile(untiled, resolution, newmode, offset=(0, 0)):
+def tile(untiled, output_resolution, newmode, offset=(0, 0)):
 
     untiled_data = untiled.load()
-    tiled = Image.new(newmode, resolution)  # Loading into memory
+    tiled = Image.new(newmode, output_resolution)  # Loading into memory
     data = tiled.load()
     untiled_width, untiled_height = untiled.size
     width, height = tiled.size
@@ -244,63 +239,57 @@ if __name__ == '__main__':  # Examples:
     saturation_amount = 1
     dither_amount = .5
 
-    current_path = ''
-    current_output_path = ''
     dithering_path = cd + '/DP/Plus.png'
 
-    bench = time.time()
-    try:
-        for i in range(len(filename)):
-            current_path = cd + '/Inputs/' + filename[i]
-            current_output_path_name = cd + '/Outputs/' + str(i) + os.path.splitext(filename[i])[0]
-            output_extension = '.png'
+    for i in range(len(filename)):
+        current_path = cd + '/Inputs/' + filename[i]
+        output_extension = '.png'
 
-            # First interpolation :
-            posterize(current_path,
-                      resolution,
-                      0,  # Interpolation
-                      palette_euclidean,
-                      saturation_amount,
-                      dithering_path,
-                      dither_amount,
-                      2,  # Outline type
-                      (0, 0, 0))\
-                .save(current_output_path + ' Normal' + output_extension, 'PNG')
+        bench = time.time()
 
-            # First Time print
-            print(str(int((time.time() - bench) * 1000)) + 'E')
-            bench = time.time()
+        # First interpolation :
+        posterize(current_path,
+                  resolution,
+                  0,  # Interpolation
+                  palette_euclidean,
+                  saturation_amount,
+                  dithering_path,
+                  dither_amount,
+                  2,  # Outline type
+                  (0, 0, 0))\
+            .save(cd + '/Outputs/Normal' + str(i) + output_extension, output_extension[1:])
 
-            # Second interpolation:
-            posterize(current_path,
-                      resolution,
-                      1,  # Interpolation
-                      palette_channel_based,
-                      saturation_amount,
-                      dithering_path,
-                      dither_amount,
-                      2,  # Outline type
-                      (0, 0, 0))\
-                .save(current_output_path + ' Channel' + output_extension, 'PNG')
+        # First Time print
+        print(str(int((time.time() - bench) * 1000)) + 'E')
+        bench = time.time()
 
-            # Second Time print
-            print(str(int((time.time() - bench) * 1000)) + 'C')
-            bench = time.time()
+        # Second interpolation:
+        posterize(current_path,
+                  resolution,
+                  1,  # Interpolation
+                  palette_channel_based,
+                  saturation_amount,
+                  dithering_path,
+                  dither_amount,
+                  2,  # Outline type
+                  (0, 0, 0))\
+            .save(cd + '/Outputs/Channel' + str(i) + output_extension, output_extension[1:])
 
-            # Third interpolation
-            posterize(current_path,
-                      resolution,
-                      2,  # Interpolation
-                      palette_range,
-                      saturation_amount,
-                      dithering_path,
-                      dither_amount,
-                      2,  # Outline type
-                      (0, 0, 0))\
-                .save(current_output_path + ' Divide' + output_extension, 'PNG')
+        # Second Time print
+        print(str(int((time.time() - bench) * 1000)) + 'C')
+        bench = time.time()
 
-            # Third Time print
-            print(str(int((time.time() - bench) * 1000)) + 'D')
-            bench = time.time()
-    except FileNotFoundError:
-        raise FileNotFoundError('Jame missed the easiest part of the code.')
+        # Third interpolation
+        posterize(current_path,
+                  resolution,
+                  2,  # Interpolation
+                  palette_range,
+                  saturation_amount,
+                  dithering_path,
+                  dither_amount,
+                  2,  # Outline type
+                  (0, 0, 0))\
+            .save(cd + '/Outputs/Divide' + str(i) + output_extension, output_extension[1:])
+
+        # Third Time print
+        print(str(int((time.time() - bench) * 1000)) + 'D')

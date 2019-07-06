@@ -1,5 +1,4 @@
 '''
-
 Costumizable
  Pixel
   Art
@@ -19,7 +18,6 @@ CPAG is licensed under the UNLicense license,
 (Refer to Posterizer.py for the main posterization algorithms.)
 
 HAVE FUN TRYING TO UNDERSTAND THE CODE!!!
-
 '''
 from PIL import Image
 from PIL import ImageOps
@@ -70,34 +68,33 @@ def func_multiplier(input_function, input_array, before_inputs: str = None, afte
     try:
         if before_inputs.strip()[0] is not '(':
             before_inputs = '(' + before_inputs
-    except Exception:
+    except AttributeError:
         before_inputs = '('
 
     try:
         if before_inputs.strip()[-1] is not ',':
             if before_inputs is not '(':
                 before_inputs += ','
-    except Exception:
+    except AttributeError:
         pass
 
     try:
         if after_inputs.strip()[0] is not ',':
             if after_inputs is not None:
                 after_inputs = ',' + after_inputs
-    except Exception:
+    except AttributeError:
         pass
 
     try:
         if after_inputs.strip()[-1] is not ')':
             if after_inputs is not None:
                 after_inputs += ')'
-    except Exception:
+    except AttributeError:
         after_inputs = ')'
 
     output_array = []
     for item in input_array:
         output_array.append(eval('input_function' + before_inputs + str(item) + after_inputs + '\n'))
-
     return output_array
 
 

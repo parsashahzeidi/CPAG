@@ -2,68 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddf9eb2d-f121-4445-8d24-d73af3a6af95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jamiejacker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jamiejacker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/AverageOutputs/UI5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/0. Color Tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/0. Color Tree.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/0. Normal Tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/0. Normal Tree.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/0. RangeM Tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/0. RangeM Tree.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/1. Color Anime.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/1. Color Anime.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/1. Normal Anime.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/1. Normal Anime.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/1. RangeM Anime.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/1. RangeM Anime.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/10. Color UI4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/10. Color UI4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/10. Normal UI4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/10. Normal UI4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/10. RangeM UI4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/10. RangeM UI4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/11. Color UI5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/11. Color UI5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/11. Normal UI5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/11. Normal UI5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/11. RangeM UI5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/11. RangeM UI5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/12. Color UI6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/12. Color UI6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/12. Normal UI6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/12. Normal UI6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/12. RangeM UI6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/12. RangeM UI6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/13. Color UI7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/13. Color UI7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/13. Normal UI7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/13. Normal UI7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/13. RangeM UI7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/13. RangeM UI7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/14. Color UI8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/14. Color UI8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/14. Normal UI8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/14. Normal UI8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/14. RangeM UI8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/14. RangeM UI8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/15. Color UI9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/15. Color UI9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/15. Normal UI9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/15. Normal UI9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/15. RangeM UI9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/15. RangeM UI9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/16. Color UI10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/16. Color UI10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/16. Normal UI10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/16. Normal UI10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/16. RangeM UI10.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/16. RangeM UI10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/17. Color UI11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/17. Color UI11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/17. Normal UI11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/17. Normal UI11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/17. RangeM UI11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/17. RangeM UI11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/2. Color MumboB.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/2. Color MumboB.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/2. Normal MumboB.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/2. Normal MumboB.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/2. RangeM MumboB.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/2. RangeM MumboB.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/3. Color MumboS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/3. Color MumboS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/3. Normal MumboS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/3. Normal MumboS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/3. RangeM MumboS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/3. RangeM MumboS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/4. Color Flower1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/4. Color Flower1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/4. Normal Flower1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/4. Normal Flower1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/4. RangeM Flower1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/4. RangeM Flower1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/5. Color Flower2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/5. Color Flower2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/5. Normal Flower2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/5. Normal Flower2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/5. RangeM Flower2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/5. RangeM Flower2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/5.kra" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/6. Color Flower3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/6. Color Flower3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/6. Normal Flower3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/6. Normal Flower3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/6. RangeM Flower3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/6. RangeM Flower3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/7. Color UI1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/7. Color UI1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/7. Normal UI1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/7. Normal UI1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/7. RangeM UI1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/7. RangeM UI1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/8. Color UI2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/8. Color UI2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/8. Normal UI2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/8. Normal UI2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/8. RangeM UI2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/8. RangeM UI2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/9. Color UI3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/9. Color UI3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/9. Normal UI3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/9. Normal UI3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Outputs/9. RangeM UI3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Outputs/9. RangeM UI3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Posterizer/Palette.py" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Palette.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Posterizer/Posterizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Posterizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PosterizerBOI.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Posterizer/Palette.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="282" column="67" selection-start-line="282" selection-start-column="67" selection-end-line="282" selection-end-column="67" />
+            <state relative-caret-position="2620">
+              <caret line="265" selection-start-line="265" selection-end-line="265" />
               <folding>
                 <element signature="e#486#507#0" expanded="true" />
               </folding>
@@ -88,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Posterizer/Posterizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6528">
-              <caret line="272" lean-forward="true" selection-start-line="272" selection-end-line="272" />
+            <state relative-caret-position="1262">
+              <caret line="294" column="59" selection-start-line="294" selection-start-column="59" selection-end-line="294" selection-end-column="59" />
               <folding>
                 <element signature="e#491#512#0" expanded="true" />
               </folding>
@@ -121,12 +61,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>post</find>
       <find>item</find>
       <find>Item</find>
       <find>outlineD</find>
       <find>invertC</find>
-      <find>i</find>
       <find>man</find>
       <find>imagechops</find>
       <find>file_width</find>
@@ -151,6 +89,8 @@
       <find>strength</find>
       <find>palette</find>
       <find>cd</find>
+      <find>i</find>
+      <find>__getitem__</find>
     </findStrings>
     <replaceStrings>
       <replace>Minimum</replace>
@@ -181,8 +121,8 @@
         <option value="$PROJECT_DIR$/Posterizer/E.py" />
         <option value="$PROJECT_DIR$/Posterizer/Average.py" />
         <option value="$PROJECT_DIR$/Posterizer/Luts/H5.py" />
-        <option value="$PROJECT_DIR$/Posterizer/Posterizer.py" />
         <option value="$PROJECT_DIR$/Posterizer/Palette.py" />
+        <option value="$PROJECT_DIR$/Posterizer/Posterizer.py" />
       </list>
     </option>
   </component>
@@ -233,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Average">
+  <component name="RunManager" selected="Python.Posterizer (1)">
     <configuration name="Average" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CPAG" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -341,8 +281,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Average" />
         <item itemvalue="Python.Posterizer (1)" />
+        <item itemvalue="Python.Average" />
         <item itemvalue="Python.H5" />
         <item itemvalue="Python.CPAG" />
         <item itemvalue="Python.Open Menu" />
@@ -380,7 +320,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.50082916" side_tool="true" weight="0.16048804" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32990506" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.200754" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.200754" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41877934" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,13 +355,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Posterizer/Palette.py</url>
-          <line>276</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -796,22 +729,22 @@ ImageMath.multiply(e, 2)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Posterizer/Posterizer.py">
+    <entry file="file://$PROJECT_DIR$/Posterizer/Palette.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6528">
-          <caret line="272" lean-forward="true" selection-start-line="272" selection-end-line="272" />
+        <state relative-caret-position="2620">
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
           <folding>
-            <element signature="e#491#512#0" expanded="true" />
+            <element signature="e#486#507#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Posterizer/Palette.py">
+    <entry file="file://$PROJECT_DIR$/Posterizer/Posterizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="282" column="67" selection-start-line="282" selection-start-column="67" selection-end-line="282" selection-end-column="67" />
+        <state relative-caret-position="1262">
+          <caret line="294" column="59" selection-start-line="294" selection-start-column="59" selection-end-line="294" selection-end-column="59" />
           <folding>
-            <element signature="e#486#507#0" expanded="true" />
+            <element signature="e#491#512#0" expanded="true" />
           </folding>
         </state>
       </provider>
