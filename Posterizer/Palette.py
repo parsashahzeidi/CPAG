@@ -165,7 +165,7 @@ def image_miner(input_image):
 
 
 def top_colour(input_image):
-    # Returns the top most used colours
+    # Returns the top most used color
     palette_output = []
     histogram_red = [0] * 256
     histogram_green = [0] * 256
@@ -240,7 +240,12 @@ def random_hued(input_image, count):
 if __name__ == '__main__':
     # Main 'launcher'
 
-    file_name = 'UI5.jpg'  # Change this to whatever image you want to use.
+    # Setting the parameters
+    file_name = input('Insert Image Name: ') + '.jpg'
+
+    if not(os.path.isfile(cd + '/Inputs/' + file_name)):
+        file_name = os.path.splitext(file_name)[0] + '.png'
+
     file_path = cd + '/Inputs/' + file_name
 
     saturation_amount = 1

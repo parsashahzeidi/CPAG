@@ -15,7 +15,7 @@ width, height = hald_5.size
 
 for x in range(width):
     for y in range(height):
-        hald_data[x, y] = ((x %32) * 8,(y %32) * 8, (x %32) + int(y / 32) * 64)
+        hald_data[x, y] = ((x % 32) * 8, (y % 32) * 8, (x % 32) + int(y / 32) * 64)
 
 print(hald_data[-1, -1])
 print(hald_data[0, 0])

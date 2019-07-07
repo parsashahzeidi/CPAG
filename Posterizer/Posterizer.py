@@ -26,14 +26,17 @@ from PIL import ImageFilter
 import os
 import time
 import cv2
-import cython  # Faster debugging, remove for memory performance if you want.
+try:
+    import cython  # Faster debugging, remove for memory performance if you want.
+except ModuleNotFoundError:
+    pass
 
 cd = os.getcwd()
 
 #  Notes:
-# A palette cant have alpha: [(230, 111, 120, 0),(203, 303, 103, 0),(0, 0, 0, 0)].
-# Outline colour cant have alpha.
-# Outline colour needs to come in the form of a tuple and not a list.
+# A palette cant have alpha: [(230, 111, 120, 0),(203, 303, 103, 0),(0, 0, 0, 0)] is false.
+# Outline colour cant have alpha: (0, 0, 0, 0) is false.
+# Outline colour needs to come in the form of a tuple and not a list: [0, 0, 0] is false.
 
 
 def posterize(file: str, output_size, interpolation: int, palette, saturation: int, dither_file=None, dither_strength=1., outline_type=2, outline_color=(0, 0, 0)):
