@@ -10,11 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 You need these 2 packages to be able to run CPAG:
 
-<<<<<<< HEAD
-Python > 3.0,  
-=======
 Python > 3.0, 
->>>>>>> 5590f905dfc29e367c2dea5ee6ea6aaaf6bf5219
+
 PILLOW
 
 You can install python from this [link](https://www.python.org/ftp/python/3.7.3/python-3.7.3-amd64.exe) for windows, or you could use the commands below for linux:
