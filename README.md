@@ -45,7 +45,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Authors
 
-* **Parsa Shahzeidi** - *Programmer* - [ParsaShahzeidi](https://github.com/PurpleBooth)
+* **Parsa Shahzeidi** - *Programmer* - [ParsaShahzeidi](https://github.com/parsashahzeidi)
 
 See also the list of [contributors](https://github.com/parsashahzeidi/CPAG/graphs/contributors) who participated in this project.
 
