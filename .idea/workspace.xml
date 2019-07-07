@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddf9eb2d-f121-4445-8d24-d73af3a6af95" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jamiejacker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jamiejacker.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Posterizer/Luts/H5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Luts/H5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Posterizer/Palette.py" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Palette.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Posterizer/Posterizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Posterizer/Posterizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Posterizer/Palette.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="239" column="26" lean-forward="true" selection-start-line="239" selection-start-column="26" selection-end-line="239" selection-end-column="26" />
+            <state relative-caret-position="-728">
+              <caret line="240" column="39" selection-start-line="240" selection-start-column="39" selection-end-line="240" selection-end-column="39" />
               <folding>
                 <element signature="e#484#505#0" expanded="true" />
               </folding>
@@ -32,13 +31,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/Image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="562">
+              <caret line="2745" selection-start-line="2745" selection-end-line="2745" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/533682446/PIL/_imaging.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Posterizer/Posterizer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-816">
-              <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
+            <state relative-caret-position="274">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
               <folding>
                 <element signature="e#489#510#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CPAG.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="214" column="20" selection-start-line="214" selection-start-column="20" selection-end-line="214" selection-end-column="20" />
+              <folding>
+                <element signature="e#56#67#0" expanded="true" />
+                <element signature="e#3361#3587#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/USAGE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -48,15 +87,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Setup Script" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>item</find>
-      <find>Item</find>
       <find>outlineD</find>
       <find>invertC</find>
       <find>man</find>
@@ -81,10 +118,12 @@
       <find>output_size</find>
       <find>data</find>
       <find>strength</find>
-      <find>palette</find>
       <find>cd</find>
       <find>i</find>
       <find>__getitem__</find>
+      <find>sat</find>
+      <find>palette</find>
+      <find>output_palette</find>
     </findStrings>
     <replaceStrings>
       <replace>Minimum</replace>
@@ -107,37 +146,67 @@
         <option value="$PROJECT_DIR$/Definition" />
         <option value="$PROJECT_DIR$/Posterizer.py" />
         <option value="$PROJECT_DIR$/ui.kv" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/cpagentry.kv" />
         <option value="$PROJECT_DIR$/Open Menu.py" />
         <option value="$PROJECT_DIR$/cpag.kv" />
-        <option value="$PROJECT_DIR$/CPAG.py" />
         <option value="$PROJECT_DIR$/Posterizer/E.py" />
         <option value="$PROJECT_DIR$/Posterizer/Average.py" />
-        <option value="$PROJECT_DIR$/Posterizer/Posterizer.py" />
         <option value="$PROJECT_DIR$/Posterizer/Luts/H5.py" />
+        <option value="$PROJECT_DIR$/Posterizer/USAGE" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+        <option value="$PROJECT_DIR$/Posterizer/Posterizer.py" />
         <option value="$PROJECT_DIR$/Posterizer/Palette.py" />
+        <option value="$PROJECT_DIR$/USAGE" />
+        <option value="$PROJECT_DIR$/CPAG.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-161" />
-    <option name="y" value="76" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="56" />
     <option name="width" value="1920" />
     <option name="height" value="1110" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CPAG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CPAG" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CPAG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CPAG" type="462c0819:PsiDirectoryNode" />
+              <item name="Posterizer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CPAG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="CPAG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$USER_HOME$/CPAG" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Average">
+  <component name="RunManager" selected="Python.CPAG">
     <configuration name="Average" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CPAG" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,7 +255,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CPAG.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="EuClIdEaN Posterizer/Inputs/UI3.jpg -d -d 128,128 -s 3 -p $PROJECT_DIR$/Posterizer/DP/Plus.png -d .1 -o 255,255,255 -a -c" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -207,27 +276,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Posterizer/Luts/H5.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Open Menu" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CPAG" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CPAG.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,13 +305,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CPAG" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Average" />
+      <item itemvalue="Python.CPAG" />
+      <item itemvalue="Python.H5" />
+      <item itemvalue="Python.Posterizer (1)" />
+      <item itemvalue="Python.scratch" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CPAG" />
+        <item itemvalue="Python.Posterizer (1)" />
+        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.Average" />
         <item itemvalue="Python.H5" />
-        <item itemvalue="Python.Posterizer (1)" />
-        <item itemvalue="Python.CPAG" />
-        <item itemvalue="Python.Open Menu" />
       </list>
     </recent_temporary>
   </component>
@@ -290,19 +366,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-161" y="76" width="1920" height="1110" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1170" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" weight="0.15833333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991708" visible="true" weight="0.15833333" />
       <window_info id="Structure" order="1" sideWeight="0.50082916" side_tool="true" weight="0.16048804" />
       <window_info id="Favorites" order="2" sideWeight="0.50082916" side_tool="true" weight="0.16048804" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32990506" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1998002" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17934272" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41877934" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288854" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32957748" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32725832" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32840466" />
@@ -329,6 +405,32 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -496,16 +598,6 @@ ImageMath.multiply(e, 2)</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hi.png" />
     <entry file="file://$PROJECT_DIR$/ui.kv" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Definition">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -534,7 +626,6 @@ ImageMath.multiply(e, 2)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CPAG.py" />
     <entry file="file://$PROJECT_DIR$/cpag.kv" />
     <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/ImageOps.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -680,13 +771,6 @@ ImageMath.multiply(e, 2)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="1980" column="8" selection-start-line="1980" selection-start-column="8" selection-end-line="1980" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Posterizer/Luts/H5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -694,25 +778,103 @@ ImageMath.multiply(e, 2)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Posterizer/Posterizer.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/533682446/sys.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816">
-          <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
+        <state relative-caret-position="337">
+          <caret line="573" selection-start-line="573" selection-end-line="573" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/533682446/posix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="417" column="4" selection-start-line="417" selection-start-column="4" selection-end-line="417" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Posterizer/USAGE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
           <folding>
-            <element signature="e#489#510#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/CPAG/lib/python3.7/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="2745" selection-start-line="2745" selection-end-line="2745" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/533682446/PIL/_imaging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Posterizer/Palette.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="239" column="26" lean-forward="true" selection-start-line="239" selection-start-column="26" selection-end-line="239" selection-end-column="26" />
+        <state relative-caret-position="-728">
+          <caret line="240" column="39" selection-start-line="240" selection-start-column="39" selection-end-line="240" selection-end-column="39" />
           <folding>
             <element signature="e#484#505#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Posterizer/Posterizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+          <folding>
+            <element signature="e#489#510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/USAGE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPAG.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="214" column="20" selection-start-line="214" selection-start-column="20" selection-end-line="214" selection-end-column="20" />
+          <folding>
+            <element signature="e#56#67#0" expanded="true" />
+            <element signature="e#3361#3587#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

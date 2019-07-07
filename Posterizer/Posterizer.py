@@ -40,16 +40,29 @@ cd = os.getcwd()
 
 
 def posterize(file: str, output_size, interpolation: int, palette, saturation: int, dither_file=None, dither_strength=1., outline_type=2, outline_color=(0, 0, 0)):
+    # If the output size is an int, we make it a tuple.
+    if type(output_size) == int:
+        output_size = [output_size, output_size]
+
     # Opening
     base = Image.open(file)
-    base.thumbnail(output_size)
+
+    # Calculating size
+    x, y = base.size
+    if x > output_size[0]:
+        y = int(max(y * output_size[0] / x, 1))
+        x = int(output_size[0])
+    if y > output_size[1]:
+        x = int(max(x * output_size[1] / y, 1))
+        y = int(output_size[1])
+    output_size = x, y
 
     alpha = 0
     if base.mode == 'RGBA':  # Alpha Controlling
         base = base.convert(base.mode[:-1])
-        alpha = Image.open(file).split()[3].resize(base.size, Image.NEAREST)
+        alpha = Image.open(file).split()[3].resize(output_size, Image.NEAREST)
 
-    base = Image.open(file).resize(base.size, Image.NEAREST)
+    base = Image.open(file).resize(output_size, Image.NEAREST)
 
     # Dithering
     if type(dither_file) is str:

@@ -27,7 +27,7 @@ import multiprocessing
 import os
 import random
 import colorsys
-from Posterizer import posterize  # Possible false alarm, conflicts between Python and PyCharm.
+from Posterizer.Posterizer import posterize  # Possible false alarm, conflicts between Python and PyCharm.
 
 cd = os.getcwd()
 cpus = multiprocessing.cpu_count()
@@ -237,12 +237,23 @@ def random_hued(input_image, count):
     return palette_output
 
 
+def palette_generator(image_path, depth=5, count=200):
+    input_image = Image.open(image_path)
+    output_palette = []
+    output_palette.append(image_miner(input_image))
+    output_palette.append(image_maxer(input_image))
+    output_palette.extend(top_colour(input_image))
+    output_palette.extend(fiftyshadesofgrey(random_hued(input_image, count), depth))
+    return output_palette
+
+
 if __name__ == '__main__':
     # Main 'launcher'
 
     # Setting the parameters
     file_name = input('Insert Image Name: ') + '.jpg'
 
+    # Changing the extension to .png if non existent.
     if not(os.path.isfile(cd + '/Inputs/' + file_name)):
         file_name = os.path.splitext(file_name)[0] + '.png'
 

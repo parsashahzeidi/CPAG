@@ -1,0 +1,51 @@
+The main python executable for cpag.
+
+Usage:
+    CPAG.py [command] [file] [command param] [params] [output path]
+
+
+Commands:
+    h = help [No Parameters]
+        Prints out THIS text
+
+    e = euclidean [-d OR euclidean palette]
+        ex: [(0, 0, 0), (51, 51, 51), (102, 102, 102), (153, 153, 153), (204, 204, 204), (255, 255, 255)]
+        Posterizing with the euclidean algorithm
+
+    c = channel [-d OR channel palette]
+        ex: [[0, 51, 102, 153, 204, 255], [0, 51, 102, 153, 204, 255], [0, 51, 102, 153, 204, 255]]
+        Posterizing with the channel based algorithm
+
+    d = divide [strength]
+        ex: 7
+        Posterizing with the divide algorithm
+
+
+Parameters:
+    -d = --dimensions  [int, int]
+        output image size, Defaults to 128x128
+        optional
+
+    -s = --sat  [int]
+        The amount of saturation applied as pre-processing
+        optional
+
+    -p = --pattern  [path]
+        The dithering pattern
+        optional
+
+    -ds = --dither  [int]
+        Dithering strength
+        optional
+
+    -o = --outpalette  [R, G, B] (No spaces, use commas.)
+        Outline color
+        optional
+
+    -a = --alphaout
+        Alpha based outline
+        optional
+
+    -c = --colorout
+        Color based outline
+        optional
